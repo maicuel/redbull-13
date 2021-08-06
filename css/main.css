@@ -3261,8 +3261,9 @@ margin: 6em;
  margin: 0 auto;
 }
 
-.claro-description .video-container {
- box-shadow: 0 0 5em #31030e;
+#batalla .video-container {
+  margin-top: 5rem;
+ box-shadow: 0 0 2em #9c9c9c;
 }
 
 /* .claro-description .column {
