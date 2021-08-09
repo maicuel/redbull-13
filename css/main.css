@@ -2205,9 +2205,9 @@ h3.section-desc {
  align-items: center;
 }
 
-.s-about > [class*="about-"] {
+/* .s-about > [class*="about-"] {
  margin-bottom: 15.2rem;
-}
+} */
 
 .s-about > [class*="about-"]:last-child {
  margin-bottom: 0;

@@ -47,7 +47,7 @@
     </header> 
 
 
-    <section id="intro" class="s-intro-page target-section">
+    <section id="intro" class="s-intro-page ">
         <div class="row intro-content">
             <div class="column large-9 mob-full intro-text">
                 <h1>
@@ -59,8 +59,65 @@
     </section>
 
 
+    <section id="timeline" class="s-about bg-white ">
 
-    <section id="esports" class="s-about bg-white target-section">
+        <div class="about-experience">
+
+          
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full aos-init aos-animate" data-aos="fade-up">
+                    <div class="timeline">
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe"> Viernes 27 de Agosto y Viernes 3 de Septiembre</p>
+                                <h3 class="item-title">Camino a Red Bull Batalla </h3>
+                                <h5>00:30 hrs</h5>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Sábado 4 de septiembre</p>
+                                <h3 class="item-title">Final Nacional</h3>
+                                <h5>22:15 hrs</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column large-half tab-full aos-init aos-animate" data-aos="fade-up">
+                    <div class="timeline">
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe"> Viernes 26 de Noviembre y Viernes 3 de Diciembre</p>
+                                <h3 class="item-title">Camino a Red Bull Batalla </h3>
+                                <h5>00:30 hrs</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Sábado 11 de Diciembre</p>
+                                <h3 class="item-title">Final Internacional (4tos en adelante)</h3>
+                                <h5>17:00 hrs</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+    </section>
+
+  
+    <section  class="s-about bg-white ">
 
 
         <div class="about-me">
@@ -174,6 +231,15 @@
           overlay: true,
           overlayColor: '#01171f',
           overlayAlpha: 0.8,
+        })
+
+        var imgBackground = new vidbg('#timeline', {
+          mp4: '#',
+          webm: '#',
+          poster:'https://img.redbull.com/images/c_crop,x_0,y_535,h_1394,w_5573/c_fill,w_4260,h_926/q_auto,f_auto/redbullcom/2021/6/2/fflqhzi99paqypbttarc/red-bull-batalla-chile',
+          overlay: true,
+          overlayColor: '#e2e2e2',
+          overlayAlpha: 0.93,
         })
       </script>
 
