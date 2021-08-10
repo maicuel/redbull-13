@@ -1346,18 +1346,23 @@ input::-moz-focus-inner {
  text-align: center;
 }
 
+.about-experience
 .section-heading {
- font-family: "Roboto", sans-serif;
- font-weight: 600;
- font-size: 2rem;
- line-height: 1.176;
- text-transform: uppercase;
- letter-spacing: .5rem;
- margin-top: 0;
- padding-top: 3.2rem;
- margin: 1em 2em;
- position: relative;
+ margin: 1em 0 4em;
 }
+
+.section-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.176;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  margin-top: 0;
+  padding-top: 3.2rem;
+  margin: 1em 2em;
+  position: relative;
+ }
 
 .section-heading::before {
  content: "";
@@ -3672,7 +3677,7 @@ line-height: 1.8;
   display: block;
   width: 1px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   left: 0;
   top: 0;
@@ -3683,7 +3688,7 @@ line-height: 1.8;
   display: block;
   width: 5.6rem;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   left: 1px;
   top: 0;
