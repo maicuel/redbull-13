@@ -37,8 +37,12 @@
         <nav class="header-nav-wrap home">
             <ul class="header-main-nav">
                 <li class="current"><a class="smoothscroll" href="#inicio">inicio</a></li>
-                <li><a class="smoothscroll" href="#batalla">¿Que es Red Bull Batalla?</a></li>
+                <li><a class="smoothscroll" href="#batalla">Socios en viaje</a></li>
+                <li><a class="smoothscroll" href="#objetivos">Objetivos</a></li>
                 <li><a class="smoothscroll" href="#comercializacion">Comercialización</a></li>
+                <li><a href="etapas.html">Etapas</a></li>
+                <li><a href="metricas.html">Métricas</a></li>
+               
             </ul>
         </nav>
 
@@ -50,7 +54,7 @@
 
 
         <div class="logo-esports">
-            <img  src="images/logo_batalla.png">
+            <img  src="images/logo.svg">
         </div>
         
         <div class="intro-scroll">
@@ -65,20 +69,50 @@
     <section id="batalla" class="s-about bg-white target-section">
         <div class="row">
             <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">¿Qué es Red Bull Batalla?</h2>
+                <h2 class="section-heading section-heading--centerbottom">Socios en viaje</h2>
+
+                <h2 class="section-desc">
+                    <p>Pancho y Jorge después del largo encierro producto de la pandemia, decidieron liberarse y hacer un viaje por el mundo haciendo su propio “BUCKET LIST”</p>
+                </h2>
         
-                <h3 class="section-desc">
-                    Red Bull Batalla es una competencia de rap improvisado que desde el año 2005 provee una plataforma para el desarrollo de los mejores improvisadores del hip hop de habla hispana. En los últimos años, se ha convertido en el evento internacional de batallas de improvisación más relevante que une a los países de Latinoamérica y España.
-                </h3>
             </div>
         </div>
-        <div class="row">
+
+        <!-- <div class="row">
             <div class="column large-10 medium-full center-column">
                 <div class="video-container">
                     <iframe width="560" height="315" src="//www.youtube.com/embed/NHcoXvVSl-w?showinfo=0&modestbranding=0&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
             </div>
-        </div>
+        </div> -->
     </section>
+
+
+
+    <section class="s-about objetive bg-black target-section" id="objetivos">
+
+        <h2 class="section-heading--centerbottom">Objetivos</h2>
+
+        <div class="row">
+            <div class="column large-4 medium-full">
+            <h3>Entretener</h3>
+            <p>El tono de esta serie es el humor. Los chistes que generarán cada uno de los lugares y los conflictos entre los socios</p>   
+            </div>
+            <div class="column large-4 medium-full">
+                <h3>Inspirar</h3>
+               <p>Todo viaje inspira, y ver a estos dos amigos haciendo su BUCKET LIST  en la “mediana edad” logrará muchas emociones en el espectador</p>  
+            </div>
+            <div class="column large-4 medium-full">
+                <h3>Sorprender</h3>
+               <p>Vamos a recorrer el mundo mostrando lugares y cosas “raras y no tan vistas”, eso sin duda tendrá sorpresa en muchos</p>  
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
 
 
     <section class="s-about bg-blackGray target-section" id="comercializacion">
@@ -86,10 +120,10 @@
         <h2 class="section-heading--centerbottom">Comercialización</h2>
         <div class="row">
             <div class="column large-6 medium-12">
-                <a class="btn btn--stroke full-width" href="abierta.html" nm="TV Abierta">TV Abierta</a>
+                <a class="btn btn--stroke full-width" href="oro.html" nm="Aupicio oro">Auspicio Oro</a>
             </div>
             <div class="column large-6 medium-12">
-                <a class="btn btn--stroke full-width" href="digital.html"  nm="Digital">Digital</a>
+                <a class="btn btn--stroke full-width" href="plata.html"  nm="Auspicio Plata">Auspicio Plata</a>
             </div>
         </div>
     </section>
@@ -121,20 +155,19 @@
 
     <script type="text/javascript">
         var videoBackground = new vidbg('#inicio', {
-          mp4: 'batalla.mp4',
-          poster: 'images/batalla_poster.jpg',   
+          mp4: '#',
+          poster: 'images/Banner.jpg',   
           overlay: true,
-          overlayColor: '#293551',
+          overlayColor: '#000',
           overlayAlpha: 0.5,
         })
 
-        var imgBackground = new vidbg('#comercializacion', {
-          mp4: '#',
-          webm: '#',
-          poster:'images/bg-4.jpg',
+        var imgBackground = new vidbg('#objetivos', {
+          mp4: 'https://firebasestorage.googleapis.com/v0/b/minisitios-13.appspot.com/o/socios_viajes%2Fmaletas.mp4?alt=media&token=5ccd88ad-36f4-4c2d-aeb7-beadb0dad135',
+          poster:'#',
           overlay: true,
           overlayColor: '#01171f',
-          overlayAlpha: 0.8,
+          overlayAlpha: 0.6,
         })
 
 
@@ -142,11 +175,11 @@
 
     <script>
         $(document).ready(function () {
-            $('#formatos a, #contenidos a').mouseover(function(){
-                $(this).text('Ver derechos');
+            $('#comercializacion a').mouseover(function(){
+                $(this).text('ver derechos');
             })
 
-            $('#formatos a, #contenidos a').mouseout(function(){
+            $('#comercializacion a').mouseout(function(){
                var text = $(this).attr('nm');
                 $(this).text(text);
             })
